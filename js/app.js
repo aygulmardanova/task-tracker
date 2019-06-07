@@ -1,5 +1,5 @@
 import {TaskListWidget} from './widgets.js';
 
-const project1El = document.getElementById('project1');
+const projectEl = document.getElementById('project');
 
-new TaskListWidget(project1El);
+new TaskListWidget(projectEl);
