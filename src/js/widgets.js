@@ -64,10 +64,12 @@ export class TaskListWidget {
             liEl.querySelector('[data-action=down]')
                 .addEventListener('click', () => this.onDown(item));
 
-            if (this.items[0] === item)
+            if (this.items[0] === item) {
                 liEl.querySelector('[data-action=up]').style.display = 'none';
-            if (this.items[this.items.length - 1] === item)
+            }
+            if (this.items[this.items.length - 1] === item) {
                 liEl.querySelector('[data-action=down]').style.display = 'none';
+            }
 
             this.itemsEl.appendChild(liEl);
         }
